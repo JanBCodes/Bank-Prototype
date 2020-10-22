@@ -3,39 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href=""> <!-- Font API-->
-        <title>Exam</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <title>Bank User Interface - Demo</title>
     </head>
     <body>
         <main>
             <h1> 
-                Bank Account Details
+                Bank ATM Interface
             </h1>
             <ul>
                 <li> 
-                    Enter Customer ID
+                    Enter Customer ID:
                 </li>
                 <li> 
-                    <form>
-                        <input id="enteredIDVal" type="text" placeholder="Enter ID"> 
-                    </form>
+                    <input id="enteredIDVal" type="text" placeholder="Enter ID"> 
                 </li>
                 <li> 
                     <button id="enteredIDbutton" type="submit"> 
-                        Look Up Customer 
+                        Look Up ID 
                     </button>
                 </li>
             </ul>
-            <div id="display">
 
+            <div id="display">
             </div>
-            <ul>
+            <div id="display1">
+            </div>
+            
+            <ul> <!-- WITHDRAW-->
                 <li> 
-                    Amount to Withdraw 
+                    Withdraw Amount: 
                 </li>
                 <li> 
-                    <input id="withdraw" type="text" placeholder="eg. $100.00"> 
+                    <input id="withdraw" type="number" placeholder="eg. $100.00"> 
                 </li>
                 <li> 
                     <button id="withdrawButton"type="submit"> 
@@ -43,18 +44,23 @@
                     </button>
                 </li>
             </ul>
-            <ul>
-                <li> Amount to Deposit </li>
+            <ul> <!-- DEPOSIT-->
                 <li> 
-                    <input id="deposit" type="text" placeholder="Enter ID"> 
+                    Deposit Amount:
                 </li>
-                <li> 
+                <li>
+                    <input id="deposit" type="number" placeholder="eg. $100.00"> 
+                </li>
+                <li>
                     <button id="depositButton" type="submit"> 
                         Deposit 
                     </button>
                 </li>
             </ul>
         </main>
-        <script src="/js/app.js"> </script>
+        
+        <button id="clear" type="reset"> Sign out </button>
+
+        <script src="js/app.js"> </script>
     </body>
 </html>
